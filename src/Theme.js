@@ -67,9 +67,15 @@ export const lightTheme = {
   colors: {
     black: "#27282C",
     white: "#FFFFFF",
+    primary: "#1976d2",
+    primaryDark: "#0d47a1",
+    white: "#ffffff",
+    textPrimary: "#000000",
     grey: {
       dark: "#7D7F81",
       extraLight: "#F3F3F3",
+      light: "#f5f5f5",
+      semiDark: "#888888",
     },
     blue: {
       dark: "#3094ea",
@@ -113,9 +119,15 @@ export const darkTheme = {
   colors: {
     black: "#FFFFFF",        // inverted for dark mode
     white: "#1E1E1E",        // dark background
+    primary: "#1976d2",
+    primaryDark: "#0d47a1",
+    white: "#ffffff",
+    textPrimary: "#000000",
     grey: {
       dark: "#B0B0B0",       // lighter grey for readability
       extraLight: "#2F2F2F", // dark neutral tone
+      light: "#f5f5f5",
+      semiDark: "#888888",
     },
     blue: {
       dark: "#7FB3FF",       // lighter blue for contrast

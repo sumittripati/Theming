@@ -49,34 +49,83 @@
 
 
 
+// import React from "react";
+// import { useTheme } from "../context/ThemeContext";
+// import { StyledServiceBox, ThemedButton } from "./Service.styles";
+// import styled from "styled-components";
+// import "./Service.css";
+
+// const Service = () => {
+//   // const { theme } = useTheme();
+//   const { themode } = useTheme();
+
+//   return (
+//     <StyledServiceBox className="service-container">
+//       <h1>this is service page</h1>
+//       <h2 style={{ color: themode.accentColor }}>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+
+//       <ThemedButton className="service-btn">
+//         hello sir
+//       </ThemedButton>
+
+//       <p>
+//         Lorem ipsum dolor sit amet consectetur adipisicing elit.
+//         Temporibus eum ipsum pariatur dolor consequatur consequuntur,
+//         consectetur nesciunt aut voluptates quisquam modi laborum neque
+//         omnis dolores eaque placeat reiciendis voluptatem commodi?
+//       </p>
+//     </StyledServiceBox>
+//   );
+// };
+
+// export default Service;
+
+
+
 import React from "react";
 import { useTheme } from "../context/ThemeContext";
 import { StyledServiceBox, ThemedButton } from "./Service.styles";
-import styled from "styled-components";
-import "./Service.css";
 
 const Service = () => {
-  // const { theme } = useTheme();
-  const { themode } = useTheme();
+  const { themode } = useTheme(); // ✅ full theme object is here
 
   return (
-    <StyledServiceBox className="service-container">
-      <h1>this is service page</h1>
-      <h2 style={{ color: themode.accentColor }}>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+    <StyledServiceBox>
+      <h1>Service Page</h1>
 
-      <ThemedButton className="service-btn">
-        hello sir
-      </ThemedButton>
+      {/* ✅ Inline dynamically themed border */}
+      <h2
+        style={{
+          color: themode.accentColor,
+          borderBottom: themode.borders.border5,
+          paddingBottom: "10px",
+        }}
+      >
+        Dynamic Inline Styling
+      </h2>
+
+      {/* ✅ normal styled button */}
+      <ThemedButton>Click Me</ThemedButton>
 
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Temporibus eum ipsum pariatur dolor consequatur consequuntur,
-        consectetur nesciunt aut voluptates quisquam modi laborum neque
-        omnis dolores eaque placeat reiciendis voluptatem commodi?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+        molestias culpa laborum tempore.
       </p>
+
+      {/* ✅ Dynamic background from nested theme */}
+      <div
+        style={{
+          background: themode.colors.grey.extraLight,
+          padding: "20px",
+          borderRadius: "10px",
+          border: themode.borders.border1,
+          marginTop: "20px",
+        }}
+      >
+        Themed Grey Box (inline)
+      </div>
     </StyledServiceBox>
   );
 };
 
 export default Service;
-

@@ -1,24 +1,4 @@
 /* src/components/Service.css */
-/* .service-container {
-  padding: 10px 20px;
-  border-radius: 10px;
-  border: 1px solid gray;
-  margin: 20px;
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.service-btn {
-  padding: 10px 20px;
-  border-radius: 10px;
-  border: 1px solid gray;
-  margin: 20px;
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
-  cursor: pointer;
-} */
 .service-container {
   max-width: 800px;
   margin: 50px auto;

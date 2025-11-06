@@ -2,7 +2,6 @@ import React from 'react'
 import { ThemedButton } from './Service.styles'
 import styled from 'styled-components'
 import { useTheme } from '../context/ThemeContext'
-// const { themode } = useTheme()
 import './home.css'
 
 const Homebutton = styled.button`
@@ -19,7 +18,6 @@ const Home = () => {
       <h1>Home Page</h1>
       <ThemedButton className='hmbtn' style={{ border: `2px solid ${themode.homebordercl}` }}>hello ji home button</ThemedButton>
       <Homebutton>Home button kjfnekrf</Homebutton>
-      {/* <a href="#">gbmfgomg</a> */}
     </div>
   )
 }

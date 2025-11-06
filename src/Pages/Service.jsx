@@ -85,6 +85,7 @@
 import React from "react";
 import { useTheme } from "../context/ThemeContext";
 import { StyledServiceBox, ThemedButton } from "./Service.styles";
+import { Button } from "@mui/material";
 
 const Service = () => {
   const { themode } = useTheme(); // ✅ full theme object is here
@@ -103,6 +104,7 @@ const Service = () => {
       >
         Dynamic Inline Styling
       </h2>
+      <Button variant="contained" size="">Click Me material UI</Button>
 
       {/* ✅ normal styled button */}
       <ThemedButton>Click Me</ThemedButton>

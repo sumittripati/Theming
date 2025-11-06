@@ -5,15 +5,15 @@ import { useTheme } from '../context/ThemeContext'
 // const { themode } = useTheme()
 import './home.css'
 
-const Home = () => {
- 
-  // let themode = useTheme()
-   const { themode } = useTheme(); 
-
-  let Homebutton = styled.button`
-  background: ${({ theme }) => theme. homebuttonBg};
+const Homebutton = styled.button`
+  background: ${({ theme }) => theme.homebuttonBg};
   color: ${({ theme }) => theme.homebuttonText};
-  `
+`
+
+const Home = () => {
+
+  // let themode = useTheme()
+   const { themode } = useTheme();
   return (
     <div>
       <h1>Home Page</h1>
